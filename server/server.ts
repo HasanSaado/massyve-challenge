@@ -5,6 +5,8 @@ const dotenv = require('dotenv');
 const routesUrls = require('./routes/routes');
 const cors = require('cors');
 
+export {};
+
 dotenv.config();
 
 Mongoose.connect(process.env.MONGODB_URI).then(()=>{
