@@ -4,6 +4,8 @@ const User = require('../models/UserModels');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
+export {};
+
 router.post('/signup', async (request: any, response: any) => {
   const hashed = await bcrypt.hash(request.body.password, 10);
   const signedUpUser = new User({
